@@ -10,14 +10,11 @@ function App() {
   const handleSubmit = async () => {
     try {
       const parsedInput = JSON.parse(jsonInput);
-      const res = await fetch(
-        "https://bajaj-finserv-rho-peach.vercel.app/bfhl",
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(parsedInput),
-        }
-      );
+      const res = await fetch("https://bajaj-finserv-rho.vercel.app/bfhl", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(parsedInput),
+      });
 
       const data = await res.json();
       setResponse(data);
