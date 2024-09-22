@@ -51,9 +51,9 @@ function App() {
   };
 
   return (
-    <div className="bg-slate-700 flex flex-col items-center justify-center min-h-screen p-8 text-white">
+    <div className="bg-yellow-500 flex flex-col items-center justify-center min-h-screen p-8 text-white">
       <h1 className="mb-6 text-4xl font-bold">
-        {response ? "Response Details" : "Bajaj Fiserv Health Task 1"}
+        {response ? "Response Details" : "Bajaj Fiserv assessment task"}
       </h1>
 
       <div className="backdrop-blur-lg bg-opacity-10 rounded-xl w-full max-w-xl p-6 bg-white shadow-md">
